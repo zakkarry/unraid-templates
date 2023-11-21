@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>cross-seed</Name>
+  <Repository>ghcr.io/cross-seed/cross-seed:latest</Repository>
+  <Registry>https://hub.docker.com/r/crossseed/cross-seed/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/cross-seed/cross-seed/issues?q=is%3Aissue</Support>
+  <Project>https://github.com/cross-seed/cross-seed</Project>
+  <Overview>Fully-automatic cross-seeding with Torznab &#xD;
+&#xD;
+Configuration Templates can be found here: https://github.com/cross-seed/cross-seed/blob/master/src/config.template.docker.cjs&#xD;
+&#xD;
+GitHub: https://github.com/cross-seed/cross-seed&#xD;
+&#xD;
+Documentation/Support: https://cross-seed.org&#xD;
+&#xD;
+Containers: https://github.com/cross-seed/cross-seed/pkgs/container/cross-seed&#xD;
+</Overview>
+  <Category>Downloaders: Other: Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/cross-seed/unraid-template/master/cross-seed.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/cross-seed/cross-seed.org/master/static/img/cross-seed.png</Icon>
+  <ExtraParams/>
+  <PostArgs>daemon</PostArgs>
+  <CPUset/>
+  <Requires/>
+  <Config Name="configDir" Target="/config" Default="/mnt/user/appdata/cross-seed" Mode="rw" Description="This is your configuration/logs/cache directory.&#13;&#10;&#13;&#10;Find the latest configuration template at the link below. &#13;&#10;&#13;&#10;Rename to config.js and place in this directory before running.&#13;&#10;https://github.com/cross-seed/cross-seed/blob/master/src/config.template.docker.cjs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/cross-seed/</Config>
+  <Config Name="torrentDir" Target="/torrents" Default="" Mode="ro" Description="Point this at a directory containing torrent files. If you don't know where your torrent client stores its files, the link below might help.&#13;&#10;&#13;&#10;https://www.cross-seed.org/docs/basics/options#torrentdir" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="outputDir" Target="/cross-seeds" Default="" Mode="rw" Description="If you use the save action, this will be where cross-seed stores matched torrent files.&#13;&#10;&#13;&#10;https://www.cross-seed.org/docs/basics/options#outputdir" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="port" Target="2468" Default="2468" Mode="tcp" Description="Enabled for daemon mode.&#13;&#10;&#13;&#10;Choose a port. Make sure your container port matches in the config file" Type="Port" Display="always" Required="true" Mask="false">2468</Config>
+  <Config Name="dataDir" Target="/data" Default="" Mode="rw" Description="This is an optional path. If you are using data-based matching you will need to mount your torrent clients downloaded data. If injecting, the container paths should match your clients.&#13;&#10;&#13;&#10;https://www.cross-seed.org/docs/tutorials/data-based-matching" Type="Path" Display="always" Required="false" Mask="false"/>
+</Container>
