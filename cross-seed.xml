@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/crossseed/cross-seed/</Registry>
   <Network>bridge</Network>
   <MyIP/>
-  <Shell>bash</Shell>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/cross-seed/cross-seed/issues?q=is%3Aissue</Support>
   <Project>https://github.com/cross-seed/cross-seed</Project>
