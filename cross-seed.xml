@@ -23,7 +23,7 @@ Containers: https://github.com/cross-seed/cross-seed/pkgs/container/cross-seed&#
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/cross-seed/unraid-template/master/cross-seed.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/cross-seed/cross-seed.org/master/static/img/cross-seed.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--user="99:100"</ExtraParams>
   <PostArgs>daemon</PostArgs>
   <CPUset/>
   <Requires/>
