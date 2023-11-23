@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Support>https://github.com/cross-seed/cross-seed/issues?q=is%3Aissue</Support>
   <Project>https://github.com/cross-seed/cross-seed</Project>
   <Overview>Fully-automatic cross-seeding with Torznab &#xD;
