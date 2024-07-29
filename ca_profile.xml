@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://i.imgur.com/2icY7tF.png</Icon>
+  <Profile>
+    cross-seed dev, deluge team member, and creator of retraktarr
+  </Profile>
+  <WebPage>https://git.ary.dev</WebPage>
+  <DonateLink>https://tip.ary.dev</DonateLink>
+  <DonateText>If you appreciate any of my work, please consider buying me a coffee.</DonateText>
+</Maintainer>
