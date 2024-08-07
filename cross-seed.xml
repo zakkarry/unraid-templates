@@ -15,7 +15,9 @@ GitHub: https://github.com/cross-seed/cross-seed&#xD;
 &#xD;
 Documentation/Support: https://cross-seed.org&#xD;
 &#xD;
-Containers: https://github.com/cross-seed/cross-seed/pkgs/container/cross-seed&#xD;
+Official Containers: https://github.com/cross-seed/cross-seed/pkgs/container/cross-seed&#xD;
+&#xD;
+Official Docker Hub Mirror: https://hub.docker.com/r/crossseed/cross-seed&#xD;
 </Overview>
   <Category>Downloaders: Other: Status:Stable</Category>
   <WebUI/>
